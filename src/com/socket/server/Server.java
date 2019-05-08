@@ -15,13 +15,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @ClassName Server2
+ * @ClassName Server
  * @Description
  * @Author wcx
  * @Date 2019/04/30 09:41
  * @Version
  **/
-public class Server2 {
+public class Server {
 
     /**
      * 服务器名称
@@ -59,7 +59,7 @@ public class Server2 {
     //private Map<Integer, Socket> clientSocketSession = new HashMap<Integer,Socket>();
     private Map<String, Socket> clientSocketSession = new HashMap<String,Socket>();
 
-    public Server2(String serverName, int port, int backlog, byte[] address) {
+    public Server(String serverName, int port, int backlog, byte[] address) {
         this.serverName = serverName;
         this.port = port;
         this.backlog = backlog;
