@@ -14,17 +14,22 @@ import java.util.Date;
 public class Message implements Serializable {
 
     /**
-     * 客户端端口
+     * 消息id
      */
-    private int port;
+    private Integer msgId;
 
     /**
-     * 客户端名
+     * 客户端端口
+     */
+    private Integer port;
+
+    /**
+     * 发送消息的客户端名称
      */
     private String name;
 
     /**
-     * 接收消息客户端名
+     * 接收消息客户端名称
      */
     private String targetName;
 
@@ -34,7 +39,7 @@ public class Message implements Serializable {
     private String msg;
 
     /**
-     * 消息发送的时间
+     * 发送消息的时间
      */
     private String time;
 
